@@ -1,4 +1,4 @@
-package opentutorials.pclaculator;
+package opentutorials.claculator;
 
 class Calculator { //클래스 : 설계도, 사용법
     int left, right;

@@ -1,6 +1,6 @@
-package lecture220319.star;
+package lecture220319;
 
-public class Star {
+public class HundredWhile {
     public static void main(String[] args) {
         int i = 1;
         while (i <= 100) {

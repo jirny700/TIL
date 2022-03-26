@@ -30,6 +30,9 @@ public class Student {
     String info(){
         return (name+","+ban+","+no+","+kor+","+eng+","+math);
     }
+    String info(int a){
+        return (name+","+ban+","+no+","+kor+","+eng+","+math);
+    }
 
 
 }

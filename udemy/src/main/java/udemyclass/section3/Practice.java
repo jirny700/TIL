@@ -1,4 +1,4 @@
-package udemyclass.section1;
+package udemyclass.section3;
 
 public class Practice {
     public static void main(String[] args) {

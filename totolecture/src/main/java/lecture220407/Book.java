@@ -13,17 +13,27 @@ public class Book {
 
     @Override
     public String toString() {
-        return "title =" + title + "price=" + price;
+        return "Book{" +
+                "title='" + title + '\'' +
+                ", price=" + price +
+                '}';
     }
 
-    @Override
-    public boolean equals(Object obj) {
-        Book obj1= (Book)obj;
-        return title.equals(obj1.title);
+     @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Book book = (Book) o;
+
+        if (price != book.price) return false;
+        return title.equals(book.title);
     }
 
     @Override
     public int hashCode() {
-        return price*2;
+        int result = title.hashCode();
+        result = 31 * result + price;
+        return result;
     }
 }

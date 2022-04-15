@@ -1,6 +1,6 @@
 package leetcode.p1480;
 
-class Solution {
+ class Solution {
     public int[] runningSum(int[] nums) {
         int[] runningSum = new int[nums.length];
         runningSum[0] = nums[0];

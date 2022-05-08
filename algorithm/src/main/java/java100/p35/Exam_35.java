@@ -51,7 +51,34 @@ public class Exam_35 {
 
         //[8]charAt()메서드 사용-->해당 인덱스에 있는 값을 반환-->단어를 char배열에 한글자씩 저장할 수 있음.
         String[] strAr={"hong","kim","park"};
-        System.out.println(strAr[0].charAt(2 ));
+        System.out.println(strAr[0].charAt(2));
 
+        //[9]: 반복문에서 charAt()메서드사용 
+        //[9-1]잘못된 예 //->h i r 출력
+        for (int  i = 0;  i < strAr.length;  i++) {
+            System.out.println(strAr[i].charAt(i));
+        }
+        //[9-2]잘못된 예 //->hon kim par 출력
+        for (int i = 0; i < strAr.length; i++) {
+            for (int j = 0; j < strAr.length; j++) {
+                System.out.println(strAr[i].charAt(j));
+            }
+        }
+        //[9-3]
+        System.out.println(strAr.length);//3
+        //System.out.println(strAr[0].length());//err/ 이중배열이 아니기 때문에
+        System.out.println(strAr[0].length());//4
+        for (int i = 0; i < strAr.length; i++) {
+            for (int j = 0; j < strAr[i].length(); j++) {
+                System.out.println(strAr[i].charAt(j));
+            }
+        }
+
+        //[10]length vs length()
+        int[] aaa= new int[10];
+        System.out.println(aaa.length);//10
+
+        String bbb="Welcome to Seoul";
+        System.out.println(bbb.length());//16
     }
 }

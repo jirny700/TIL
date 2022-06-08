@@ -43,6 +43,7 @@ public class SocketThread extends Thread {
         pw.println("HTTP/1.1 200 OK");
         pw.println("name : kim");
         pw.println("email : aaaa");
+        pw.println("");
         pw.flush();
 
         try {

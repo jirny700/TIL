@@ -13,6 +13,14 @@ public class NumberBaseball {
         int[] baseballAnswer = new int[4];
         for (int i = 0; i < 4; i++) {
             baseballAnswer[i] = random.nextInt(10);
+            for (int j = 0; j < i; j++) {
+                if(baseballAnswer[i]==baseballAnswer[j]){
+                    i--;
+                    break;
+                }
+            }
+        }
+        for (int i = 0; i < baseballAnswer.length; i++) {
             System.out.println(baseballAnswer[i]);
         }
 

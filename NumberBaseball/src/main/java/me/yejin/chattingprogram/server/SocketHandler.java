@@ -1,4 +1,6 @@
-package me.yejin.chattingprogram;
+package me.yejin.chattingprogram.server;
+
+import me.yejin.chattingprogram.server.ChatServer;
 
 import java.io.*;
 import java.net.Socket;

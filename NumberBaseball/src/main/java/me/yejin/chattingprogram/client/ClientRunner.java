@@ -1,4 +1,6 @@
-package me.yejin.chattingprogram;
+package me.yejin.chattingprogram.client;
+
+import me.yejin.chattingprogram.client.ChatClient;
 
 public class ClientRunner {
     public static void main(String[] args){

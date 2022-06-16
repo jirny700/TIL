@@ -1,4 +1,4 @@
-package me.yejin.chattingprogram;
+package me.yejin.chattingprogram.server;
 
 
 import java.net.InetAddress;
